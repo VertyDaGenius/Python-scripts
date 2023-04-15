@@ -1,7 +1,11 @@
-# this is my first time coding in python so please do not judge this
+# requirements:
+# colorama
 
 import subprocess
 import time
+import colorama
+from colorama import Fore
+
 ip_address = input('Type an IP address to ping!')
 
 while True:
@@ -10,7 +14,8 @@ while True:
     output = subprocess.run(ping_command, capture_output=True)
 
     if output.returncode == 0:
-        print(f"{ip_address} Is Up.")
+        print(Fore.GREEN + ip_address + " Is Up.")
+
     else:
-        print(f"{ip_address} Is Down.")
+        print(Fore.RED + ip_address + " Is Down/invalid.")
     time.sleep(1)
