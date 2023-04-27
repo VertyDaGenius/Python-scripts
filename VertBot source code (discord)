@@ -20,7 +20,11 @@ async def on_message(message):
     if p_message == 'hello':
         response = 'Hi there! You can check out what commands I can do in the bot commands channel!'
     elif message.content.startswith("!dice"):
-        response = str(random.randint(int(message.content.split()[1]), int(message.content.split()[2])))
+        up , down = (int(message.content.split()[1]), int(message.content.split()[2]))
+        if up < 0:
+            await message.channel.send("no negative number.. GRRRRR.. BAWRK BAWRK!")
+            return
+        response = str(random.randint(up,down))
     elif p_message == 'woof':
         response = '**WOOF WOOF WOOF BAWRK BAWRK**'
     elif p_message == 'github':
