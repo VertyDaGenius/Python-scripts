@@ -1,7 +1,6 @@
 import discord
 from discord.ext import commands
 import random
-from random import randint
 
 intents = discord.Intents.default()
 intents.members = True
@@ -20,10 +19,8 @@ async def on_message(message):
     p_message = message.content.lower()
     if p_message == 'hello':
         response = 'Hi there! You can check out what commands I can do in the bot commands channel!'
-    elif p_message == 'dice100':
-        response = str(random.randint(1, 100))
-    elif p_message == 'dice10':
-        response = str(random.randint(1, 10))
+    elif message.content.startswith("!dice"):
+        response = str(random.randint(int(message.content.split()[1]), int(message.content.split()[2])))
     elif p_message == 'woof':
         response = '**WOOF WOOF WOOF BAWRK BAWRK**'
     elif p_message == 'github':
