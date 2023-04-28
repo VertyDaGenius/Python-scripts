@@ -1,0 +1,33 @@
+@bot.event
+async def on_message(message):
+    if message.content.startswith('!guessgame'):
+        if message.channel.id != 1101349098315071548:
+            await message.channel.send("THIS COMMAND ONLY WORKS IN THE CHANNEL #guessgame-vertbot STUPID!")
+            return
+
+        number = random.randint(1, 50)
+        guess_count = 0
+        guess_limit = 10
+        await message.channel.send("MY NUMBER IS BETWEEN 1 AND 50! WOOFWOOFWOOFOWOFOFOF!")
+        while guess_count < guess_limit:
+            try:
+                guess = await bot.wait_for('message', timeout=30.0)
+                if guess.content.startswith('!exitgg'):
+                    await message.channel.send(f'HAHAHAHA U QUIT! THE NUMBER WAS {number}')
+                    return
+                guess = int(guess.content)
+            except asyncio.TimeoutError:
+                await message.channel.send("YOU TOOK TOO LONG! >:(!")
+                return
+            except:
+                await message.channel.send("ENTER A NUMBER, NOTHING ELSE!!! WOOF WOOF!")
+                continue
+            if guess < number:
+                await message.channel.send("MY NUMBER IS GREATER! BAWRK BAWRK")
+            elif guess > number:
+                await message.channel.send("MY NUMBER IS LOWER! BAWRK BAWRK")
+            else:
+                await message.channel.send(f"YAYYYY {message.author.mention}! YOU GUESSED IT CORRECTLY! :3 ({number})!")
+                return
+            guess_count += 1
+        await message.channel.send(f"U ran out of guesses :( the number was {number}. BAWRK")
