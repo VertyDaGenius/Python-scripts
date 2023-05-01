@@ -1,0 +1,33 @@
+import os
+import time
+print("""
++---+
+|  \|
+    |
+    |
+    |
+=========
+""")
+print('welcome to guess the word!')
+print('select a game mode:')
+print('[1] easy')
+print('[2] medium')
+print('[3] hard')
+
+mode = input('Enter the game mode: ')
+while mode not in ["1", "2", "3"]:
+  mode = input('Enter 1, 2, or 3: ')
+
+if mode == "1":
+  print(' you chose: easy')
+  time.sleep(2)
+  
+  
+elif mode == "2":
+  print('you chose: medium')
+  time.sleep(2)
+  
+  
+else:
+  print('you chose: hard')
+  time.sleep(2)
