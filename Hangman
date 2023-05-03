@@ -1,0 +1,244 @@
+import os
+import time
+import random
+import string
+
+os.system(':start')
+# create wordlists
+easy_wordlist = ['fire', 'love', 'cake', 'book', 'fish', 'bird', 'tree', 'frog', 'game', 
+                'duck', 'corn', 'rain', 'moon', 'toad', 'door', 'bear', 'hair', 'hill', 
+                'home', 'hope', 'idea', 'iron', 'jazz', 'kite', 'lake', 'leaf', 'lion', 
+                'mice', 'milk', 'nest', 'note', 'oven', 'park', 'pear', 'rain', 'rice', 
+                'road', 'rock', 'sail', 'salt', 'ship', 'shop', 'sofa', 'star', 'tape', 
+                'tire', 'tuna', 'verb', 'wall', 'wasp', 'warm', 'worm', 'yarn', 
+                'year']
+easyword = random.choice(easy_wordlist)
+
+
+medium_wordlist = ['banana', 'coffee', 'dancer', 'guitar', 'hiking', 'jacket', 'kitten', 'market', 'noodle', 'pencil',
+                    'rocket', 'singer', 'travel', 'turtle', 'vector', 'window', 'winter', 'yogurt', 'zigzag',  
+                    'airplane', 'bicycle', 'candle', 'diamond', 'elephant', 'flamingo', 'garden', 'honey', 'island',
+                    'jungle', 'kangaroo', 'lighthouse', 'mountain', 'ocean', 'penguin', 'quilt', 'rainbow', 'sandal',
+                    'sunset', 'teddybear', 'umbrella', 'violin', 'waterfall', 'xylophone', 'yellow', 'zebra',
+                    'acoustic', 'basket', 'calendar', 'disco', 'electric', 'feather', 'gorilla', 'hamburger', 
+                    'iceberg', 'jellyfish', 'koala', 'lizard', 'marathon', 'necklace', 'octopus', 'pajamas',
+                    'quicksand', 'rhinoceros', 'scissors', 'telephone', 'unicycle', 'volcano', 'whale',                    
+                    'xylophone', 'yacht', 'zipper']
+medword = random.choice(medium_wordlist)
+
+
+hard_wordlist = ['altruism', 'benevolent', 'catharsis', 'dichotomy', 'eclectic', 'epiphany', 'equivocate', 'exacerbate',
+            'frugal', 'gregarious', 'hegemony', 'indictment', 'intrinsic', 'lucid', 'malign', 'nefarious', 'obfuscate',
+            'onerous', 'paradox', 'perfidy', 'proclivity', 'prudent', 'quintessential', 'relegate', 'resilient',
+            'sanguine', 'scrupulous', 'solicitous', 'superfluous', 'sycophant', 'taciturn', 'temerity', 'tenacious',
+            'ubiquitous', 'unprecedented', 'vacillate', 'venerable', 'verbose', 'vex', 'vicarious', 'vilify',
+            'vindicate', 'virulent', 'vitriolic', 'wanton', 'wistful', 'zealot', 'zenith', 'zephyr']
+hardword = random.choice(hard_wordlist)
+
+
+impossible_wordlist = ['antidisestablishmentarianism', 'floccinaucinihilipilification', 'pneumonoultramicroscopicsilicovolcanoconiosis',
+                  'supercalifragilisticexpialidocious', 'sesquipedalian', 'onomatopoeia', 'hyperbolic', 'idiopathic',
+                  'paradigm', 'sacrosanct', 'schadenfreude', 'synecdoche', 'prognosticate', 'quintessential', 'anomaly',
+                  'zeitgeist', 'precipitous', 'ephemeral', 'labyrinthine', 'apoplectic', 'abstemious', 'acumen',
+                  'anachronistic', 'archaic', 'asperity', 'assiduous', 'circumspect', 'colloquial', 'concomitant',
+                  'connote', 'consequential', 'deleterious', 'delineate', 'disparate', 'dogmatic', 'efficacy',
+                  'emulate', 'enervate', 'enigmatic', 'erudite', 'esoteric', 'evanescent', 'expedient', 'fastidious',
+                  'flagrant', 'garrulous', 'gregarious', 'iconoclast', 'immutable', 'impervious']
+impossibleword = random.choice(impossible_wordlist)
+
+
+random_wordlist = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y"]
+random_word1 = random.sample(random_wordlist, random.randint(5, 7))
+random_word1 = "".join(random_word1)
+
+
+print('setup:')
+print('how many guesses do you want:')
+print('[1] baby mode   -(25 guesses)')
+print('[2] childs play -(15 guesses)')
+print('[3] boss        -(10 guesses)')
+print('[4] god         -(8 guesses)')
+print('[5] impossible  -(5 guesses)')
+
+setup = input('Enter the game mode: ')
+while setup not in ["1", "2", "3", "4", "5"]:
+  setup = input('Enter 1, 2, 3, 4, or 5: ')
+
+if setup =="1":
+   guesses = 26
+elif setup =="2":
+   guesses = 16
+elif setup =="3":
+   guesses = 11
+elif setup =="4":
+   guesses = 9
+elif setup =="5":
+   guesses = 6
+
+print("""
++---+
+|  \|
+    |
+    |
+    |
+=========
+""")
+
+print('welcome to guess the word!')
+print('select a game mode:')
+print('[1] easy')
+print('[2] medium')
+print('[3] hard')
+print('[4] impossible')
+print('[5] random')
+
+mode = input('Enter the game mode: ')
+while mode not in ["1", "2", "3", "4", "5"]:
+  mode = input('Enter 1, 2, 3, 4, or 5: ')
+
+if mode == "1":
+  print(' you chose: easy')
+  time.sleep(2)
+  os.system('goto game1')
+  
+elif mode == "2":
+  print('you chose: medium')
+  time.sleep(2)
+  os.system('goto game2')
+  
+  
+elif mode == "3":
+  print('you chose: hard')
+  time.sleep(2)
+  os.system('goto game3')
+
+elif mode == "4":
+  print('you chose: impossible')
+  time.sleep(2)
+  os.system('goto game4')
+  
+  
+elif mode == "5":
+    print('you chose: random')
+    time.sleep(2)
+    os.system('goto game5')
+
+os.system(':game1')
+os.system('cls')
+print('easy mode:')
+def play_game():
+    random_word1 = easyword
+    hidden_word1 = '_' * len(random_word1)
+    incorrect_guesses = 0
+    wrong_guesses_indicator = 0
+    incorrect_letters = []
+    while incorrect_guesses < guesses and hidden_word1 != random_word1:
+        print(f"""
+    +---+     incorrect letters: {', '.join(incorrect_letters)}
+    |  \|
+    {wrong_guesses_indicator}   |
+        |
+        |
+    =========
+    """)
+        if wrong_guesses_indicator > 9:
+           print('u ruined the ascii art!')
+        print(hidden_word1)
+        letter = input("Guess a letter: ")
+        if letter.isalpha() and letter in string.ascii_lowercase:
+            if letter in random_word1:
+                print("Correct!")
+                # Replace all occurrences of the guessed letter in the hidden word
+                for i in range(len(random_word1)):
+                    if random_word1[i] == letter:
+                        hidden_word1 = hidden_word1[:i] + letter + hidden_word1[i+1:]
+            else:
+                if letter not in incorrect_letters:
+                    print("Incorrect!")
+                    incorrect_guesses += 1
+                    wrong_guesses_indicator += 1
+                    incorrect_letters.append(letter)
+                else:
+                    print(f"You already guessed '{letter}' incorrectly.")
+        else:
+            print("Guess a valid letter please!")
+
+    if incorrect_guesses >= guesses:
+        print(f"Game over! The word was '{random_word1}'.")
+    else:
+        print(f"Congratulations! You correctly guessed the word '{random_word1}'!")
+while True:
+    play_game()
+    user_input = input('Another round? (Y/N)')
+    if user_input.lower() == "y":
+        continue
+    elif user_input.lower() == "n":
+        exit()
+    else:
+        print('sorry! invalid input.')
+        time.sleep(2)
+        break
+
+
+
+
+
+
+
+
+
+os.system('game2')
+os.system('cls')
+print('medium mode:')
+def play_game():
+    random_word1 = medword
+    hidden_word1 = '_' * len(medword)
+    incorrect_guesses = 0
+    wrong_guesses_indicator = 0
+    incorrect_letters = []
+    while incorrect_guesses < guesses and hidden_word1 != random_word1:
+        print(f"""
+    +---+     incorrect letters: {', '.join(incorrect_letters)}
+    |  \|
+    {wrong_guesses_indicator}   |
+        |
+        |
+    =========
+    """)
+        if wrong_guesses_indicator > 9:
+           print('u ruined the ascii art!')
+        print(hidden_word1)
+        letter = input("Guess a letter: ")
+        if letter.isalpha() and letter in string.ascii_lowercase:
+            if letter in random_word1:
+                print("Correct!")
+                # Replace all occurrences of the guessed letter in the hidden word
+                for i in range(len(random_word1)):
+                    if random_word1[i] == letter:
+                        hidden_word1 = hidden_word1[:i] + letter + hidden_word1[i+1:]
+            else:
+                if letter not in incorrect_letters:
+                    print("Incorrect!")
+                    incorrect_guesses += 1
+                    wrong_guesses_indicator += 1
+                    incorrect_letters.append(letter)
+                else:
+                    print(f"You already guessed '{letter}' incorrectly.")
+        else:
+            print("Guess a valid letter please!")
+
+    if incorrect_guesses >= guesses:
+        print(f"Game over! The word was '{random_word1}'.")
+    else:
+        print(f"Congratulations! You correctly guessed the word '{random_word1}'!")
+while True:
+    play_game()
+    user_input = input('Another round? (Y/N)')
+    if user_input.lower() == "y":
+        continue
+    elif user_input.lower() == "n":
+        exit()
+    else:
+        print('sorry! invalid input.')
+        time.sleep(2)
+        break
