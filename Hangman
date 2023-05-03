@@ -28,11 +28,11 @@ medword = random.choice(medium_wordlist)
 
 
 hard_wordlist = ['altruism', 'benevolent', 'catharsis', 'dichotomy', 'eclectic', 'epiphany', 'equivocate', 'exacerbate',
-            'frugal', 'gregarious', 'hegemony', 'indictment', 'intrinsic', 'lucid', 'malign', 'nefarious', 'obfuscate',
-            'onerous', 'paradox', 'perfidy', 'proclivity', 'prudent', 'quintessential', 'relegate', 'resilient',
-            'sanguine', 'scrupulous', 'solicitous', 'superfluous', 'sycophant', 'taciturn', 'temerity', 'tenacious',
-            'ubiquitous', 'unprecedented', 'vacillate', 'venerable', 'verbose', 'vex', 'vicarious', 'vilify',
-            'vindicate', 'virulent', 'vitriolic', 'wanton', 'wistful', 'zealot', 'zenith', 'zephyr']
+                 'frugal', 'gregarious', 'hegemony', 'indictment', 'intrinsic', 'lucid', 'malign', 'nefarious', 'obfuscate',
+                 'onerous', 'paradox', 'perfidy', 'proclivity', 'prudent', 'quintessential', 'relegate', 'resilient',
+                 'sanguine', 'scrupulous', 'solicitous', 'superfluous', 'sycophant', 'taciturn', 'temerity', 'tenacious',
+                 'ubiquitous', 'unprecedented', 'vacillate', 'venerable', 'verbose', 'vex', 'vicarious', 'vilify',
+                 'vindicate', 'virulent', 'vitriolic', 'wanton', 'wistful', 'zealot', 'zenith', 'zephyr']
 hardword = random.choice(hard_wordlist)
 
 
