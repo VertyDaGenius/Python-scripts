@@ -121,29 +121,46 @@ physics_info = [
         "topic": "acoustics",
         "equations": ["v = fλ", "I = P/A", "L = 10 log(I/I_0)"],
         "description": "Acoustics is the study of the properties of sound, including its generation, transmission, and reception."
-    }
+    },
+    {
+    "topic": "equations",
+    "equations": ["read below:"],
+    "description": "Condensed matter physics is the study of the physical properties of condensed phases of matter, such as solids and liquids."
+    },
 ]
 
+print('EXAMPLE: "acoustics", or "acou".')
 
 while True:
-    def answer_question(question):
-        tokens = word_tokenize(question.lower())
-
-        matching_topics = []
-        for info in physics_info:
-            pattern = re.compile(r"^" + re.escape(" ".join(tokens[2:])))
-            if any(pattern.match(token.lower()) for token in word_tokenize(info['topic'])):
-                matching_topics.append(info)
-
-        if not matching_topics:
-            return "Invalid input"
-
-        best_match = max(matching_topics, key=lambda x: similarity_score(tokens, word_tokenize("what is " + x['topic'].lower())))
-
-        response = best_match['description'] + "\nEquations: " + ", ".join(best_match['equations'])
+    def answer_question(question, tokens):
+        if question.strip().lower() == "ex":
+            print(' ')
+            print(' ')
+            print(' ')
+            print(' ')
+            print(' ')
+            print(' ')
+            print(' ')
+            print(' ')
+            print(' ')
+            print(' ')
+            print(' ')
+            exit()
+        elif matching_topics := [info for info in physics_info if any(re.compile(re.escape(" ".join(tokens))).match(token.lower()) for token in word_tokenize(info['topic']))]:
+            best_match = max(matching_topics, key=lambda x: similarity_score(tokens, word_tokenize(x['topic'].lower())))
+            response = best_match['description'] + "\nEquations: " + ", ".join(best_match['equations'])
+        elif any(token.lower() in [topic['topic'].lower() for topic in physics_info] for token in tokens):
+            response = "dont include this word: " + tokens[0] + "."
+        else:
+            response = "Invalid input."
 
         return response
 
     question = input("notes: ")
-    answer = answer_question(question)
+    print(' ')
+    print(' ')
+    tokens = word_tokenize(question)
+    answer = answer_question(question, tokens)
     print(answer)
+    print(' ')
+    print(' ')
