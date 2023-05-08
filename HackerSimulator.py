@@ -148,7 +148,7 @@ while True:
       {money} USD!
       ''')
       time.sleep(2)
-      if (input("Type q to quit, anything else for another random student number: ") == "q"):
+      if (input("Type q to quit, anything else for another round: ") == "q"):
         break
   
     else:
