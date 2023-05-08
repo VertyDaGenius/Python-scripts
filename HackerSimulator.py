@@ -141,7 +141,6 @@ while True:
         print(f'You found the password! it is: {pass_word}')
 
   if hack =="8":
-    print(f'{pass_word}')
     guess = input('Guess The Password: ')
     if guess ==pass_word:
       print(f'''
