@@ -153,6 +153,7 @@ while True:
       else:
         pass_word = random.sample(pass_wordlist, random.randint(5, 7))
         pass_word = "".join(pass_word)
+        money = random.randint(8000, 99999)
   
     else:
       print(' ')
