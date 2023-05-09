@@ -148,8 +148,11 @@ while True:
       {money} USD!
       ''')
       time.sleep(2)
-      if (input("Type q to quit, anything else for another round: ") == "q"):
+      if (input("Type q to quit, anything else for another password hack: ") == "q"):
         break
+      else:
+        pass_word = random.sample(pass_wordlist, random.randint(5, 7))
+        pass_word = "".join(pass_word)
   
     else:
       print(' ')
