@@ -2,6 +2,49 @@
 import random
 import time
 
+usermoney = 10
+lawnm = 15
+ptj = 25
+bc = 1000
+bcl = 10000
+ds = 20
+bs = 15
+sh = 20
+dd = random.randint(10, 200)
+
+while True:
+  print(' ')
+  print(' ')
+  print('welcome to hacker simulator!')
+  print('type in "r" to see the rules!')
+  print('first we need to make some money!')
+  print(' ')
+  print('how do you want to start off?')
+  print('[1] mowing lawns -            (15 dollars per 5 seconds)')
+  print('[2] part time job -           (25 dollars per 10 seconds)')
+  print('[3] bitcoin -                 (1000 dollars per minute, high chance of losing 10000)')
+  print('[4] drop shipping -           (20 dollars per 7 seconds)')
+  print('[5] babysitting -             (15 dollars per 5 seconds)')
+  print('[6] selling hardware -        (20 dollars per 10)')
+  print('[7] dumpster diving -         (10-200 dollars per 10 seconds)')
+  start = input('select one: ')
+  print(' ')
+  print(' ')
+  
+  if start =="1":
+    print('you mow a lawn...')
+    time.sleep(5)
+    print('congrats! you made 15 dollars!')
+    
+  
+
+
+
+
+
+
+
+
 money = random.randint(8000, 99999)
 
 pass_wordlist = ["^", "@", "%", "%", "g", "f", "!", "h", "i", "j", "k", "l", "m", "9", "+", "6", "2", "1", ">", "4", "u", "v", "w", "x", "y"]
