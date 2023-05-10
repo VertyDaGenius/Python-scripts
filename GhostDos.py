@@ -14,7 +14,7 @@ from colorama import Fore
 
 colorama.init()
 print(Fore.LIGHTBLACK_EX + "       ___")
-print("     _/ oo\\ Please use me for ethical purposes only. :) ")
+print("     _/ oo\\ Please use me for ethical purposes only. as in stress testing your OWN website. happy coding! :) ")
 print("    ( \\  -/__")
 print("     \\    \\__)")
 print("     /     \\")
