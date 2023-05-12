@@ -478,96 +478,96 @@ while True:
           print('[3] spyware')
           virus = input('enter one: ')
           
-        if virus =="1":
-          print('you stay up all night creating a rat and you post it online as a mod menu for gta...')
-          time.sleep(4)
-          if random.randint(1, 4) != 1:
-            print(' ')
-            print('the file was flagged as unsafe then later removed!')
-            print(' ')
-          else:
-            print(' ')
-            print('some 10 year old downloaded it! you then stole his parents credit card information!')
-            usermoney = usermoney + rat
-            print(f'added {rat} dollars!')
-
-          if virus =="2":
-            print('you developed a ransomware that encrypts every file then demands money for the decryption key!')
-            time.sleep(3)
-            if random.randint(1, 4) != 1:
-              print(' ')
-              print('windows defender took it down!')
-              print(' ')
-            else:
-              print(' ')
-              print('someone downloaded it then sent you {ransom} worth of bitcoin to decrypt his computer!')
-              usermoney = usermoney + ransom
-              print(f'you got {ransom} dollars!')
-            print(' ')
-            
-          if virus =="3":
-            print('you made spyware that sends you information through a discord webhook!')
+          if virus =="1":
+            print('you stay up all night creating a rat and you post it online as a mod menu for gta...')
             time.sleep(4)
             if random.randint(1, 4) != 1:
               print(' ')
-              print('the nobody downloaded it!')
+              print('the file was flagged as unsafe then later removed!')
               print(' ')
             else:
-              print('someone downloaded it! you sold their information online for {spy} dollars!')
-              usermoney = usermoney + spy
-              print(f'added {spy} dollars')
-
-        if kaly =="3":
-          bankmoneyshop = random.randint(400, 900)
-          cashforapples = random.randint(500, 800)
-          sqlinjectmepls = random.randiny(150, 1500)
-          iwl = random.randint(200, 1000)
-          print('what website do you want to inject into? (these arent real websites)')
-          print('[1] bankmoney.shop')
-          print('[2] cashforapples.net')
-          print('[3] sqlinjectmepls.cc')
-          print('[4] illegalwebsitelol.help')
-          sqlmap = input('choose one to inject into: ')
-          
-          if sqlmap =="1":
-            print('you open sqlmap and atempt to dump the database of bankmoney.shop...')
-            time.sleep(3)
-            if random.randint(1, 3) != 1:
-              print('you failed to dump the database!')
+              print(' ')
+              print('some 10 year old downloaded it! you then stole his parents credit card information!')
+              usermoney = usermoney + rat
+              print(f'added {rat} dollars!')
+  
+            if virus =="2":
+              print('you developed a ransomware that encrypts every file then demands money for the decryption key!')
               time.sleep(3)
-            else:
-              print(f'you dumped the database! you sold it online for {bankmoneyshop}')
-              time.sleep(3)
+              if random.randint(1, 4) != 1:
+                print(' ')
+                print('windows defender took it down!')
+                print(' ')
+              else:
+                print(' ')
+                print('someone downloaded it then sent you {ransom} worth of bitcoin to decrypt his computer!')
+                usermoney = usermoney + ransom
+                print(f'you got {ransom} dollars!')
+              print(' ')
               
-          if sqlmap =="2":
-            print('you open sqlmap and atempt to dump the database of cashforapples.net...')
-            time.sleep(3)
-            if random.randint(1, 3) != 1:
-              print('you failed to dump the database!')
+            if virus =="3":
+              print('you made spyware that sends you information through a discord webhook!')
+              time.sleep(4)
+              if random.randint(1, 4) != 1:
+                print(' ')
+                print('the nobody downloaded it!')
+                print(' ')
+              else:
+                print('someone downloaded it! you sold their information online for {spy} dollars!')
+                usermoney = usermoney + spy
+                print(f'added {spy} dollars')
+  
+          if kaly =="3":
+            bankmoneyshop = random.randint(400, 900)
+            cashforapples = random.randint(500, 800)
+            sqlinjectmepls = random.randiny(150, 1500)
+            iwl = random.randint(200, 1000)
+            print('what website do you want to inject into? (these arent real websites)')
+            print('[1] bankmoney.shop')
+            print('[2] cashforapples.net')
+            print('[3] sqlinjectmepls.cc')
+            print('[4] illegalwebsitelol.help')
+            sqlmap = input('choose one to inject into: ')
+            
+            if sqlmap =="1":
+              print('you open sqlmap and atempt to dump the database of bankmoney.shop...')
               time.sleep(3)
-            else:
-              print(f'you dumped the database! you sold it online for {cashforapples}')
+              if random.randint(1, 3) != 1:
+                print('you failed to dump the database!')
+                time.sleep(3)
+              else:
+                print(f'you dumped the database! you sold it online for {bankmoneyshop}')
+                time.sleep(3)
+                
+            if sqlmap =="2":
+              print('you open sqlmap and atempt to dump the database of cashforapples.net...')
               time.sleep(3)
-
-          if sqlmap =="3":
-            print('you open sqlmap and atempt to dump the database of sqlinjectmepls.cc...')
-            time.sleep(3)
-            if random.randint(1, 3) != 1:
-              print('you failed to dump the database!')
+              if random.randint(1, 3) != 1:
+                print('you failed to dump the database!')
+                time.sleep(3)
+              else:
+                print(f'you dumped the database! you sold it online for {cashforapples}')
+                time.sleep(3)
+  
+            if sqlmap =="3":
+              print('you open sqlmap and atempt to dump the database of sqlinjectmepls.cc...')
               time.sleep(3)
-            else:
-              print(f'you dumped the database! you sold it online for {sqlinjectmepls}')
+              if random.randint(1, 3) != 1:
+                print('you failed to dump the database!')
+                time.sleep(3)
+              else:
+                print(f'you dumped the database! you sold it online for {sqlinjectmepls}')
+                time.sleep(3)
+  
+            if sqlmap =="4":
+              print('you open sqlmap and atempt to dump the database of illegalwebsitelol.help...')
               time.sleep(3)
-
-          if sqlmap =="4":
-            print('you open sqlmap and atempt to dump the database of illegalwebsitelol.help...')
-            time.sleep(3)
-            if random.randint(1, 3) != 1:
-              print('you failed to dump the database!')
-              time.sleep(3)
-            else:
-              print(f'you dumped the database! you sold it online for {iwl}')
-              time.sleep(3)
+              if random.randint(1, 3) != 1:
+                print('you failed to dump the database!')
+                time.sleep(3)
+              else:
+                print(f'you dumped the database! you sold it online for {iwl}')
+                time.sleep(3)
 
       else:
         
@@ -800,96 +800,96 @@ while True:
                   print('[3] spyware')
                   virus = input('enter one: ')
                   
-                if virus =="1":
-                  print('you stay up all night creating a rat and you post it online as a mod menu for gta...')
-                  time.sleep(1)
-                  if random.randint(1, 4) != 1:
-                    print(' ')
-                    print('the file was flagged as unsafe then later removed!')
-                    print(' ')
-                  else:
-                    print(' ')
-                    print('some 10 year old downloaded it! you then stole his parents credit card information!')
-                    usermoney = usermoney + rat
-                    print(f'added {rat} dollars!')
-        
-                  if virus =="2":
-                    print('you developed a ransomware that encrypts every file then demands money for the decryption key!')
+                  if virus =="1":
+                    print('you stay up all night creating a rat and you post it online as a mod menu for gta...')
                     time.sleep(1)
                     if random.randint(1, 4) != 1:
                       print(' ')
-                      print('windows defender took it down!')
+                      print('the file was flagged as unsafe then later removed!')
                       print(' ')
                     else:
                       print(' ')
-                      print('someone downloaded it then sent you {ransom} worth of bitcoin to decrypt his computer!')
-                      usermoney = usermoney + ransom
-                      print(f'you got {ransom} dollars!')
-                    print(' ')
-                    
-                  if virus =="3":
-                    print('you made spyware that sends you information through a discord webhook!')
-                    time.sleep(1)
-                    if random.randint(1, 4) != 1:
+                      print('some 10 year old downloaded it! you then stole his parents credit card information!')
+                      usermoney = usermoney + rat
+                      print(f'added {rat} dollars!')
+          
+                    if virus =="2":
+                      print('you developed a ransomware that encrypts every file then demands money for the decryption key!')
+                      time.sleep(1)
+                      if random.randint(1, 4) != 1:
+                        print(' ')
+                        print('windows defender took it down!')
+                        print(' ')
+                      else:
+                        print(' ')
+                        print('someone downloaded it then sent you {ransom} worth of bitcoin to decrypt his computer!')
+                        usermoney = usermoney + ransom
+                        print(f'you got {ransom} dollars!')
                       print(' ')
-                      print('the nobody downloaded it!')
-                      print(' ')
-                    else:
-                      print('someone downloaded it! you sold their information online for {spy} dollars!')
-                      usermoney = usermoney + spy
-                      print(f'added {spy} dollars')
-        
-                if kaly =="3":
-                  bankmoneyshop = random.randint(400, 900)
-                  cashforapples = random.randint(500, 800)
-                  sqlinjectmepls = random.randiny(150, 1500)
-                  iwl = random.randint(200, 1000)
-                  print('what website do you want to inject into? (these arent real websites)')
-                  print('[1] bankmoney.shop')
-                  print('[2] cashforapples.net')
-                  print('[3] sqlinjectmepls.cc')
-                  print('[4] illegalwebsitelol.help')
-                  sqlmap = input('choose one to inject into: ')
-                  
-                  if sqlmap =="1":
-                    print('you open sqlmap and atempt to dump the database of bankmoney.shop...')
-                    time.sleep(1)
-                    if random.randint(1, 3) != 1:
-                      print('you failed to dump the database!')
-                      time.sleep(3)
-                    else:
-                      print(f'you dumped the database! you sold it online for {bankmoneyshop}')
-                      time.sleep(3)
                       
-                  if sqlmap =="2":
-                    print('you open sqlmap and atempt to dump the database of cashforapples.net...')
-                    time.sleep(1)
-                    if random.randint(1, 3) != 1:
-                      print('you failed to dump the database!')
+                    if virus =="3":
+                      print('you made spyware that sends you information through a discord webhook!')
+                      time.sleep(1)
+                      if random.randint(1, 4) != 1:
+                        print(' ')
+                        print('the nobody downloaded it!')
+                        print(' ')
+                      else:
+                        print('someone downloaded it! you sold their information online for {spy} dollars!')
+                        usermoney = usermoney + spy
+                        print(f'added {spy} dollars')
+          
+                  if kaly =="3":
+                    bankmoneyshop = random.randint(400, 900)
+                    cashforapples = random.randint(500, 800)
+                    sqlinjectmepls = random.randiny(150, 1500)
+                    iwl = random.randint(200, 1000)
+                    print('what website do you want to inject into? (these arent real websites)')
+                    print('[1] bankmoney.shop')
+                    print('[2] cashforapples.net')
+                    print('[3] sqlinjectmepls.cc')
+                    print('[4] illegalwebsitelol.help')
+                    sqlmap = input('choose one to inject into: ')
+                    
+                    if sqlmap =="1":
+                      print('you open sqlmap and atempt to dump the database of bankmoney.shop...')
+                      time.sleep(1)
+                      if random.randint(1, 3) != 1:
+                        print('you failed to dump the database!')
+                        time.sleep(3)
+                      else:
+                        print(f'you dumped the database! you sold it online for {bankmoneyshop}')
+                        time.sleep(3)
+                        
+                    if sqlmap =="2":
+                      print('you open sqlmap and atempt to dump the database of cashforapples.net...')
+                      time.sleep(1)
+                      if random.randint(1, 3) != 1:
+                        print('you failed to dump the database!')
+                        time.sleep(3)
+                      else:
+                        print(f'you dumped the database! you sold it online for {cashforapples}')
+                        time.sleep(3)
+          
+                    if sqlmap =="3":
+                      print('you open sqlmap and atempt to dump the database of sqlinjectmepls.cc...')
                       time.sleep(3)
-                    else:
-                      print(f'you dumped the database! you sold it online for {cashforapples}')
+                      if random.randint(1, 3) != 1:
+                        print('you failed to dump the database!')
+                        time.sleep(3)
+                      else:
+                        print(f'you dumped the database! you sold it online for {sqlinjectmepls}')
+                        time.sleep(3)
+          
+                    if sqlmap =="4":
+                      print('you open sqlmap and atempt to dump the database of illegalwebsitelol.help...')
                       time.sleep(3)
-        
-                  if sqlmap =="3":
-                    print('you open sqlmap and atempt to dump the database of sqlinjectmepls.cc...')
-                    time.sleep(3)
-                    if random.randint(1, 3) != 1:
-                      print('you failed to dump the database!')
-                      time.sleep(3)
-                    else:
-                      print(f'you dumped the database! you sold it online for {sqlinjectmepls}')
-                      time.sleep(3)
-        
-                  if sqlmap =="4":
-                    print('you open sqlmap and atempt to dump the database of illegalwebsitelol.help...')
-                    time.sleep(3)
-                    if random.randint(1, 3) != 1:
-                      print('you failed to dump the database!')
-                      time.sleep(3)
-                    else:
-                      print(f'you dumped the database! you sold it online for {iwl}')
-                      time.sleep(3)
+                      if random.randint(1, 3) != 1:
+                        print('you failed to dump the database!')
+                        time.sleep(3)
+                      else:
+                        print(f'you dumped the database! you sold it online for {iwl}')
+                        time.sleep(3)
                 
               else:
                 if userstatus5 =='wa':
