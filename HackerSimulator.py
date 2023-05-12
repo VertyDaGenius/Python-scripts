@@ -59,7 +59,7 @@ while True:
   print('[7] dumpster diving -         (10-200 dollars per 15 seconds)')
   print('misc:')
   print(' ')
-  print('[8] shop')
+  print('[8] shop (buy extentions)')
   print('[9] what extentions you have')
   print('[10] hack')
   print('[11] cheat code')
