@@ -61,9 +61,8 @@ while True:
   print(' ')
   print('[8] shop (buy extentions)')
   print('[9] what extentions you have')
-  print('[10] hack')
-  print('[11] cheat code')
-  print('[12] extentions page (bought from shop)')
+  print('[10] cheat code')
+  print('[11] extentions page (bought from shop)')
   print(' ')
     
   start = input('select one: ')
@@ -268,7 +267,7 @@ while True:
 
     
     
-  if start =="11":
+  if start =="10":
     print(' ')
     print(' ')
     print('cheat code number 1: givcash (adds 10000 dollars to your account')
@@ -296,7 +295,7 @@ while True:
     
       
 
-  if start =="12":
+  if start =="11":
     print('extentions page:')
     print('if nothing shows up you didnt buy and extentions from the shop!')
     time.sleep(2)
