@@ -1,5 +1,6 @@
 #password hack simulator
 #works for replit on school computers
+#made this for school computers so it kinda sucks but bare with me
 import random
 import time
 
