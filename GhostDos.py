@@ -3,7 +3,7 @@ import threading
 import time
 import colorama
 from colorama import Fore
-# made by andrew the skid
+# made by vertydagenius
 
 # initialize colorama
 # REQUIREMENTS:
