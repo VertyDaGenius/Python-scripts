@@ -14,7 +14,7 @@ from colorama import Fore
 
 colorama.init()
 print(Fore.LIGHTBLACK_EX + "       ___")
-print("     _/ oo\\ Please use me for ethical purposes only. as in stress testing your OWN website. happy coding! :) ")
+print("     _/ oo\\ Please use me for ethical purposes only. as in stress testing your OWN website.")
 print("    ( \\  -/__")
 print("     \\    \\__)")
 print("     /     \\")
@@ -28,7 +28,7 @@ print(Fore.RED + "██║░░╚██╗██╔══██║██║�
 print(Fore.RED + "╚██████╔╝██║░░██║╚█████╔╝██████╔╝░░░██║░░░██████╔╝╚█████╔╝██████╔╝")
 print(Fore.RED + "░╚═════╝░╚═╝░░╚═╝░╚════╝░╚═════╝░░░░╚═╝░░░╚═════╝░░╚════╝░╚═════╝░")
 print(Fore.MAGENTA + 'welcome to the GhostDoser')
-print(Fore.MAGENTA + 'made by andrewtheskid')
+print(Fore.MAGENTA + 'made by verty')
 
 # setting up the variables
 print('you cannot select how many times this script runs so just keep it running until the reqeust times out')
