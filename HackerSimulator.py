@@ -1,6 +1,7 @@
 #password hack simulator
 #works for replit on school computers
 #made this for school computers so it kinda sucks but bare with me
+#dont waste your time here because its pretty crappy and can be simplified by using other modules but because replit is kinda bad for using other modules 
 import random
 import time
 
