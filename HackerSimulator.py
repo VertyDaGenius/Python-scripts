@@ -76,7 +76,7 @@ while True:
     DISCLAIMER! if the first word for the extentions says "nothing" that means you DONT have it
    1) {userstatus} (your starting laptop)  -- slow but does the trick
    2) {userstatus3} (ddos toolkit)         -- lets you down ips
-   3) {userstatus4} (wifi adapter)         --lets you run aircrack-ng and speeds up your wifi
+   3) {userstatus4} (wifi adapter)         -- lets you run aircrack-ng and speeds up your wifi
    4) {userstatus5} (windows pc)           -- fast as hek
    5) {userstatus6} (gaming pc)            -- faster than fast as hek for pro gamers
    6) {userstatus7} (badusb)               -- hijack computers to make a botnet
